@@ -195,6 +195,33 @@ font-size:36px;
 
 }
 
+.car-image{
+width:100%;
+aspect-ratio:16/9;
+overflow:hidden;
+background:#eee;
+}
+
+.car-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.car:hover{
+transform:translateY(-4px);
+transition:.25s;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.car-image img{
+transition:transform .4s;
+}
+
+.car:hover img{
+transform:scale(1.05);
+}
 </style>
 
 </head>
@@ -302,37 +329,70 @@ Phục vụ tại tất cả quận tại Hà Nội và khu vực lân cận.
 
 <section id="cars" class="container">
 
-<h2 class="section-title">Các dòng xe cưới phổ biến</h2>
+<h2 class="section-title">Các dòng xe cưới phổ biến tại Hà Nội</h2>
 
 <div class="cars">
 
+<!-- HYUNDAI PALISADE -->
+
 <article class="car">
 
+<div class="car-image">
+
+<picture>
+
+<source 
+media="(max-width:768px)" 
+srcset="https://images.unsplash.com/photo-1696306411312-4a6e0a4b68cb?q=80&w=800">
+
 <img
-src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1200"
-alt="Hyundai Paradise"
-loading="lazy">
+src="https://images.unsplash.com/photo-1696306411312-4a6e0a4b68cb?q=80&w=1200"
+alt="Hyundai Palisade tại Việt Nam"
+loading="lazy"
+width="1200"
+height="675">
+
+</picture>
+
+</div>
 
 <div class="car-content">
 
-<h3>Hyundai Paradise</h3>
+<h3>Hyundai Palisade</h3>
 
 <p>
-Xe cưới rộng rãi, sang trọng, phù hợp đoàn rước dâu.
+SUV cao cấp rộng rãi, phù hợp đoàn rước dâu đông người.
 </p>
 
-<div class="price">Từ 4.000.000đ</div>
+<div class="price">Từ 5.000.000đ</div>
 
 </div>
 
 </article>
 
+
+<!-- VINFAST VF7 -->
+
 <article class="car">
 
+<div class="car-image">
+
+<picture>
+
+<source 
+media="(max-width:768px)" 
+srcset="https://images.unsplash.com/photo-1702482414544-4fdcd6f8c39f?q=80&w=800">
+
 <img
-src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=1200"
-alt="VinFast VF7"
-loading="lazy">
+src="https://images.unsplash.com/photo-1702482414544-4fdcd6f8c39f?q=80&w=1200"
+alt="VinFast VF7 xe điện tại Việt Nam"
+loading="lazy"
+width="1200"
+height="675">
+
+</picture>
+
+</div>
 
 <div class="car-content">
 
@@ -342,25 +402,42 @@ loading="lazy">
 SUV điện hiện đại, phong cách trẻ trung cho lễ cưới.
 </p>
 
-<div class="price">Từ 5.500.000đ</div>
+<div class="price">Từ 6.000.000đ</div>
 
 </div>
 
 </article>
 
+
+<!-- MAZDA 3 -->
+
 <article class="car">
 
+<div class="car-image">
+
+<picture>
+
+<source 
+media="(max-width:768px)" 
+srcset="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c9?q=80&w=800">
+
 <img
-src="https://images.unsplash.com/photo-1542365887-536a154d97a9?q=80&w=1200"
-alt="Mazda 3"
-loading="lazy">
+src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c9?q=80&w=1200"
+alt="Mazda 3 sedan"
+loading="lazy"
+width="1200"
+height="675">
+
+</picture>
+
+</div>
 
 <div class="car-content">
 
 <h3>Mazda 3</h3>
 
 <p>
-Thiết kế thể thao, phù hợp phong cách cưới tối giản.
+Sedan thể thao, phù hợp lễ cưới tối giản và hiện đại.
 </p>
 
 <div class="price">Từ 3.500.000đ</div>
