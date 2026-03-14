@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Nền Tảng Xe Cưới Việt Nam | Dịch vụ xe cưới sang trọng</title>
+<title>Dịch Vụ Xe Cưới Hà Nội | Thuê xe cưới hiện đại cho cặp đôi trẻ</title>
 
-<meta name="description" content="Nền tảng đặt xe cưới sang trọng tại Việt Nam. Mercedes, BMW, Rolls Royce, Limousine. Đặt xe nhanh chóng, giá minh bạch.">
+<meta name="description" content="Dịch vụ thuê xe cưới tại Hà Nội dành cho cặp đôi trẻ. VinFast VF7, Mazda 3, Hyundai Paradise. Giá minh bạch, đặt xe nhanh.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <style>
 
 :root{
---primary:#9c7a4c;
+--primary:#c89b63;
 --dark:#1a1a1a;
 --gray:#666;
 --bg:#faf9f7;
@@ -27,6 +28,10 @@
 box-sizing:border-box;
 margin:0;
 padding:0;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -51,6 +56,9 @@ padding:24px;
 header{
 background:white;
 border-bottom:1px solid #eee;
+position:sticky;
+top:0;
+z-index:10;
 }
 
 .nav{
@@ -61,7 +69,7 @@ align-items:center;
 
 .logo{
 font-family:"Playfair Display",serif;
-font-size:28px;
+font-size:26px;
 font-weight:600;
 color:var(--primary);
 }
@@ -69,8 +77,12 @@ color:var(--primary);
 .nav a{
 text-decoration:none;
 color:#333;
-margin-left:24px;
+margin-left:22px;
 font-weight:500;
+}
+
+.nav a:hover{
+color:var(--primary);
 }
 
 .hero{
@@ -102,10 +114,6 @@ font-weight:500;
 display:inline-block;
 }
 
-.btn:hover{
-opacity:.9;
-}
-
 .section-title{
 font-family:"Playfair Display",serif;
 font-size:32px;
@@ -123,11 +131,7 @@ gap:28px;
 background:white;
 padding:28px;
 border-radius:8px;
-box-shadow:0 4px 16px rgba(0,0,0,.04);
-}
-
-.feature h3{
-margin-bottom:10px;
+box-shadow:0 4px 16px rgba(0,0,0,.05);
 }
 
 .cars{
@@ -153,25 +157,24 @@ font-weight:600;
 margin-top:8px;
 }
 
-.cta{
-background:var(--primary);
-color:white;
-text-align:center;
-padding:80px 24px;
-margin-top:80px;
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
 }
 
-.cta h2{
-font-family:"Playfair Display",serif;
-font-size:36px;
-margin-bottom:20px;
+.contact-box{
+background:white;
+padding:28px;
+border-radius:8px;
+box-shadow:0 4px 16px rgba(0,0,0,.05);
 }
 
 footer{
 background:#111;
 color:#aaa;
-padding:40px 24px;
 text-align:center;
+padding:40px;
 margin-top:60px;
 }
 
@@ -182,8 +185,8 @@ grid-template-columns:1fr;
 text-align:center;
 }
 
-.nav a{
-margin-left:16px;
+.contact{
+grid-template-columns:1fr;
 }
 
 .hero h1{
@@ -199,96 +202,126 @@ font-size:36px;
 <body>
 
 <header>
+
 <div class="container nav">
 
-<div class="logo">WeddingCar</div>
+<div class="logo">DịchVụXeCưới</div>
 
-<nav aria-label="Main navigation">
-<a href="#">Trang chủ</a>
-<a href="#">Xe cưới</a>
-<a href="#">Giá</a>
-<a href="#">Liên hệ</a>
+<nav aria-label="Main Navigation">
+
+<a href="#home">Trang chủ</a>
+<a href="#features">Dịch vụ</a>
+<a href="#cars">Xe cưới</a>
+<a href="#contact">Liên hệ</a>
+
 </nav>
 
 </div>
+
 </header>
 
 <main>
 
-<section class="container hero">
+<section id="home" class="container hero">
 
 <div>
 
-<h1>Xe cưới sang trọng cho ngày trọng đại</h1>
+<h1>Thuê xe cưới hiện đại cho cặp đôi trẻ tại Hà Nội</h1>
 
 <p>
-Nền tảng đặt xe cưới cao cấp tại Việt Nam.  
-Lựa chọn từ hàng trăm xe Mercedes, BMW, Limousine và Rolls Royce.
+
+Nền tảng đặt xe cưới dành cho thế hệ trẻ.  
+Chọn xe đẹp, đặt nhanh, giá minh bạch cho ngày cưới đáng nhớ.
+
 </p>
 
-<a class="btn" href="#">Tìm xe cưới</a>
+<a class="btn" href="#cars">Xem xe cưới</a>
 
 </div>
 
 <div>
-<img 
-src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=1200"
-alt="Xe cưới sang trọng"
+
+<img
+src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200"
+alt="Cặp đôi cưới trẻ tại Hà Nội"
 loading="lazy">
+
 </div>
 
 </section>
 
-<section class="container">
+<section id="features" class="container">
 
-<h2 class="section-title">Vì sao chọn chúng tôi</h2>
+<h2 class="section-title">Dịch vụ dành cho cặp đôi trẻ</h2>
 
 <div class="features">
 
 <div class="feature">
-<h3>Xe cưới cao cấp</h3>
-<p>Danh sách xe được tuyển chọn từ các nhà cung cấp uy tín.</p>
+
+<h3>Xe đẹp – phong cách hiện đại</h3>
+
+<p>
+Các dòng xe trẻ trung phù hợp phong cách cưới hiện đại tại Hà Nội.
+</p>
+
 </div>
 
 <div class="feature">
+
+<h3>Đặt xe nhanh chóng</h3>
+
+<p>
+Chỉ cần 1 cuộc gọi hoặc tin nhắn để giữ xe cho ngày cưới.
+</p>
+
+</div>
+
+<div class="feature">
+
 <h3>Giá minh bạch</h3>
-<p>So sánh giá nhiều nhà cung cấp, không phí ẩn.</p>
+
+<p>
+Không phát sinh chi phí, báo giá rõ ràng trước khi đặt.
+</p>
+
 </div>
 
 <div class="feature">
-<h3>Đặt xe nhanh</h3>
-<p>Đặt xe chỉ trong 2 phút với hệ thống tự động.</p>
-</div>
 
-<div class="feature">
-<h3>Hỗ trợ 24/7</h3>
-<p>Đội ngũ tư vấn sẵn sàng hỗ trợ mọi lúc.</p>
+<h3>Hỗ trợ tận nơi</h3>
+
+<p>
+Phục vụ tại tất cả quận tại Hà Nội và khu vực lân cận.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="container">
+<section id="cars" class="container">
 
-<h2 class="section-title">Xe cưới phổ biến</h2>
+<h2 class="section-title">Các dòng xe cưới phổ biến</h2>
 
 <div class="cars">
 
 <article class="car">
 
-<img 
-src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=1200"
-alt="Mercedes S Class Wedding Car"
+<img
+src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1200"
+alt="Hyundai Paradise"
 loading="lazy">
 
 <div class="car-content">
 
-<h3>Mercedes S-Class</h3>
+<h3>Hyundai Paradise</h3>
 
-<p>Xe cưới sang trọng hàng đầu.</p>
+<p>
+Xe cưới rộng rãi, sang trọng, phù hợp đoàn rước dâu.
+</p>
 
-<div class="price">Từ 6.000.000đ</div>
+<div class="price">Từ 4.000.000đ</div>
 
 </div>
 
@@ -296,37 +329,41 @@ loading="lazy">
 
 <article class="car">
 
-<img 
-src="https://images.unsplash.com/photo-1549921296-3c52c5a8b8c4?q=80&w=1200"
-alt="BMW Wedding Car"
-loading="lazy">
-
-<div class="car-content">
-
-<h3>BMW 7 Series</h3>
-
-<p>Phong cách hiện đại và lịch lãm.</p>
-
-<div class="price">Từ 5.000.000đ</div>
-
-</div>
-
-</article>
-
-<article class="car">
-
-<img 
+<img
 src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=1200"
-alt="Rolls Royce Wedding Car"
+alt="VinFast VF7"
 loading="lazy">
 
 <div class="car-content">
 
-<h3>Rolls Royce</h3>
+<h3>VinFast VF7</h3>
 
-<p>Đẳng cấp cho ngày cưới hoàn hảo.</p>
+<p>
+SUV điện hiện đại, phong cách trẻ trung cho lễ cưới.
+</p>
 
-<div class="price">Từ 20.000.000đ</div>
+<div class="price">Từ 5.500.000đ</div>
+
+</div>
+
+</article>
+
+<article class="car">
+
+<img
+src="https://images.unsplash.com/photo-1542365887-536a154d97a9?q=80&w=1200"
+alt="Mazda 3"
+loading="lazy">
+
+<div class="car-content">
+
+<h3>Mazda 3</h3>
+
+<p>
+Thiết kế thể thao, phù hợp phong cách cưới tối giản.
+</p>
+
+<div class="price">Từ 3.500.000đ</div>
 
 </div>
 
@@ -336,15 +373,41 @@ loading="lazy">
 
 </section>
 
-<section class="cta">
+<section id="contact" class="container">
 
-<h2>Đặt xe cưới cho ngày trọng đại</h2>
+<h2 class="section-title">Liên hệ đặt xe cưới</h2>
 
-<p>So sánh giá và đặt xe ngay hôm nay</p>
+<div class="contact">
+
+<div class="contact-box">
+
+<h3>Thông tin liên hệ</h3>
+
+<p><strong>Hotline:</strong> 0988 888 888</p>
+
+<p><strong>Điện thoại:</strong> 024 8888 8888</p>
+
+<p><strong>Email:</strong> contact@dichvuxecuoi.net</p>
+
+<p><strong>Địa chỉ:</strong> Từ Liêm, Hà Nội, Việt Nam</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Tư vấn nhanh</h3>
+
+<p>
+Liên hệ để nhận tư vấn xe cưới phù hợp với ngân sách và phong cách lễ cưới của bạn.
+</p>
 
 <br>
 
-<a class="btn" href="#">Đặt xe ngay</a>
+<a class="btn" href="tel:0988888888">Gọi ngay</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -352,9 +415,9 @@ loading="lazy">
 
 <footer>
 
-<p>© 2026 WeddingCar Vietnam</p>
+<p>© 2026 Dịch Vụ Xe Cưới</p>
 
-<p>Nền tảng đặt xe cưới hàng đầu tại Việt Nam</p>
+<p>Dịch vụ thuê xe cưới dành cho cặp đôi trẻ tại Hà Nội</p>
 
 </footer>
 
